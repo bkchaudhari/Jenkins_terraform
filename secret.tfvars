@@ -1,2 +1,2 @@
-username = "nsroot"
-password = "bhendi@123"
+ns_username = "nsroot"
+ns_password = "bhendi@123"
