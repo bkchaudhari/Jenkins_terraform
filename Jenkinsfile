@@ -24,7 +24,7 @@ pipeline {
       steps {
           powershell("""
             cd lbvserver
-            terraform apply -var-file="../secret.tfvars" --auto-approve
+            terraform apply -var-file="../secret.tfvars" -auto-approve
           """)
         }
       }
