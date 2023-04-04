@@ -1,5 +1,5 @@
 resource "citrixadc_lbvserver" "terraformlb" {
-  name        = "terraformLB"
+  name        = "terraformLB1"
   ipv46       = var.vip_config["vip"]
   port        = "80"
   servicetype = "HTTP"
