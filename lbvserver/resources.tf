@@ -6,7 +6,7 @@ resource "citrixadc_lbvserver" "terraformlb" {
 }
 
 resource "citrixadc_servicegroup" "backend" {
-  servicegroupname = "terraformBackend"
+  servicegroupname = "terraformBackend1"
   lbvservers       = [citrixadc_lbvserver.terraformlb.name]
   servicetype      = "HTTP"
   clttimeout       = var.backend_service_config["clttimeout"]
