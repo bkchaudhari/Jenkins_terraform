@@ -4,12 +4,6 @@ pipeline {
         terraform 'Terraform'
     }
   stages {
-      stage('Git Checkout') {
-         steps {
-            git 'https://github.com/bkchaudhari/Jenkins_terraform.git'
-          }
-        }
-      }
     stage('Terraform Init') {
       steps {
          powershell("""
