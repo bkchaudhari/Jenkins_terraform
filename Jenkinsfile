@@ -7,7 +7,7 @@ pipeline {
     stage('Terraform Init') {
       steps {
          powershell("""
-            cd lbvserver
+            cd lbvserver1
             terraform init
           """)
        }
@@ -15,7 +15,7 @@ pipeline {
      stage('Terraform Plan') {
        steps {
           powershell("""
-            cd lbvserver
+            cd lbvserver1
             terraform plan -var-file="../secret.tfvars"
           """)
         }
@@ -23,8 +23,8 @@ pipeline {
      stage('Terraform Apply') {
       steps {
           powershell("""
-            cd lbvserver
-            terraform apply -var-file="../secret.tfvars" --auto-approve
+            cd lbvserver1
+            terraform apply -var-file="../secret.tfvars" -auto-approve
           """)
         }
       }

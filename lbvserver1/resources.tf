@@ -1,12 +1,12 @@
 resource "citrixadc_lbvserver" "test_lb1" {
   name        = "test_lb1"
-  ipv46       = "10.10.10.11"
+  ipv46       = "10.117.10.10"
   port        = "80"
   servicetype = "HTTP"
 }
 resource "citrixadc_service" "test_service" {
   name = "test_service"
-  ip = "192.168.100.10"
+  ip = "192.168.10.10"
   servicetype  = "HTTP"
   port = 80
 }
