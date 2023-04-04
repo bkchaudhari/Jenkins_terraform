@@ -1,5 +1,5 @@
 vip_config = {
-  vip = "10.10.10.110"
+  vip = "10.10.10.111"
 }
 
 backend_service_config = {
@@ -8,6 +8,6 @@ backend_service_config = {
 }
 
 backend_services = [
-  "172.33.50.112",
-  "172.33.50.113",
+  "172.33.50.115",
+  "172.33.50.116",
 ]
